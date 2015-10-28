@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Javi Aránega Website</title>
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <!--link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.2.0/trianglify.min.js"></script>
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?2.5.0"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <![if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]>
+
+      <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(function() {
+
+          $('.wrap img').each(function(n) {
+            n += 1;
+            $(this).wrap('<figure class="tint t'+ n + '"></figure>');
+          });
+        });
+
+
+            $( document ).ready(function() {
+
+                var ctx = document.getCSSCanvasContext("2d", "squares", window.innerWidth, window.innerHeight);
+
+                /*ctx.fillStyle = "rgb(200,0,0)";
+                ctx.fillRect (10, 10, 55, 50);
+
+                ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+                ctx.fillRect (30, 30, 55, 50);*/
+
+                var pattern = Trianglify({
+                    width: window.innerWidth,
+                    height: window.innerHeight
+                });
+
+                /*document.body.appendChild(pattern.canvas())*/
+
+       });
+
+
+    </script>
+   
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="intro-header">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+
+                        <img src="img/perfil-bw.jpg " alt="Profile Picture" class="img-responsive img-circle center-block">
+                        
+                        <h1>Javier Aránega Azor</h1>
+                        <h2>Creative Developer</h2>
+                       
+
+
+                        <div class="description center-block">
+                            <p>I’m an off-road developer.</p>
+                            <p>I’ve brought my knowledge to big <a href="http://www.seat.com" target="_blank">companies</a> and known <a href="http://www.rtve.es" target="_blank"> media</a>.
+                            I’ve been showing my projects in music tech <a href="https://sonar.es/es/2014/prg/sm/music-technology-group-universitat-pompeu-fabra_149" target="_blank"> festivals</a> and <a href=""> events</a>.
+                            I love to contribute to <a href="http://www.hello-lola.com" target="_blank"> creative</a> and <a href=""> entertaining </a>industry.
+                            I enjoy creating unusual forms of <a href="http://www.r-controlmusic.com" target="_blank"> interaction</a>.
+                            But the most I love is to enhance the <a href=""><span class="">user experience</span></a> with the latest technology.</p>
+                        </div>
+
+                        <div class="description center-block undeline">
+                           <p> <a href="docs/Javier-Aranega-CV.pdf"><u>Download CV</u></a></p>
+                        </div>
+                      
+                        <div class="description center-block">
+                           <p>Check out some of my favourite projects</p>
+                        </div>
+
+                        <div class="wrap">
+                        
+                            <ul class="list-inline project-list">
+                                <li>
+                                    <a href="" class="tint"> <img class="img-responsive center-block" src="img/rcontrol.png"/></a>
+                                </li>
+                                <li>
+                                    <a href="" class="tint"> <img class="img-responsive center-block"src="img/xmas2.png"/></a>
+                                </li>
+                                <li>
+                                    <a href="" class="tint"> <img class="img-responsive center-block" src="img/mira-lights-show.png"/></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- .wrap -->
+
+
+                        <ul class="list-inline social-buttons">
+                            <li>
+                                <a href="https://twitter.com/javiaranega" class="TwitterLink"><img src="img/twitter.png"></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/jaranega" class="GithubLink"><img src="img/github.png"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/javiaranega" class="LinkedinLink"><img src="img/linkedin.png"></a>
+                            </li>
+                            <li>
+                                <a href="mailto:javi.aranega@gmail.com" class="MailLink"><img src="img/mail.png"></a>
+                            </li>
+                        </ul>
+                     
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                   <p class="text-muted small copyright">Javier Aránega. <i class="fa fa-copyright"></i> 2015.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
