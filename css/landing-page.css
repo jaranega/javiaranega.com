@@ -171,7 +171,7 @@ body {
     content: "Mira AV Live Show";
 }
 
-a.TwitterLink {
+/*a.TwitterLink {
     background: url('../img/twitter-hover.png') bottom;
     display: block;
     position: relative;
@@ -221,7 +221,7 @@ a.MailLink {
 a.MailLink:hover {
     background-position: 0 0;
     text-indent: -99999px;
-}
+}*/
 
 
 @media(max-width:767px) {
@@ -297,7 +297,6 @@ a.MailLink:hover {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    /*background: url(../img/banner-bg.jpg) no-repeat center center;*/
     background-size: cover;
 }
 

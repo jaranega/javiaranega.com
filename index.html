@@ -50,24 +50,37 @@
         });
 
 
-            $( document ).ready(function() {
+        $( document ).ready(function() 
+        {
+            generateTriangles();
 
-                var ctx = document.getCSSCanvasContext("2d", "squares", window.innerWidth, window.innerHeight);
+            $(window).scroll(function()
+            {
+                //generateTriangles();
+            })
+        });
 
-                /*ctx.fillStyle = "rgb(200,0,0)";
-                ctx.fillRect (10, 10, 55, 50);
+        $( window ).resize(function() 
+        {
+            generateTriangles();
+        });
 
-                ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
-                ctx.fillRect (30, 30, 55, 50);*/
+        function generateTriangles()
+        {
 
-                var pattern = Trianglify({
-                    width: window.innerWidth,
-                    height: window.innerHeight
-                });
+            var ctx = document.getCSSCanvasContext("2d", "squares", window.innerWidth, window.innerHeight);
 
-                /*document.body.appendChild(pattern.canvas())*/
+            var pattern = Trianglify({
+                width: window.innerWidth,
+                height:document.documentElement.scrollHeight,
+                variance: 1,
+                cell_size: 50,
+                /*x_colors: ['#000000', '#C3C3C3', '#4A4A4A'],*/
+                x_colors: ['#45a1c0', '#D0D0D0', '#4A4A4A']
+            });
 
-       });
+            pattern.canvas(ctx.canvas);8
+        }
 
 
     </script>
@@ -154,7 +167,7 @@
 
 
     <!-- Footer -->
-    <footer>
+    <!--footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -162,7 +175,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer-->
 
 </body>
 
