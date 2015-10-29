@@ -47,16 +47,14 @@ body {
 .intro-header {
     position: auto;
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     text-align: center;
     color: #000000;
-    /*background: url(../img/intro-bg.jpg) no-repeat center center;*/
-    background-size: cover;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 5%;
+    padding-top: 10px;
     padding-bottom: 10px;
 } 
 
@@ -82,9 +80,9 @@ body {
 }
 
 .intro-divider {
-    width: 400px;
-    /*border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);*/
+    width: 390px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 .intro-message > h3 {
@@ -96,7 +94,6 @@ body {
 } 
 
 .social-buttons  > ul {
-    
 }
 
 .project-list  > ul {
@@ -117,8 +114,8 @@ body {
     line-height:1.5em;
     color: rgba(73,73,73,0.80);
 
-    width: 70%;
-    padding: 10px 5% 20px; 5%;
+    width: 75%;
+    padding: 10px 0% 20px; 0%;
 }
 
 .intro-message > .list-inline {
@@ -171,7 +168,7 @@ body {
     content: "Mira AV Live Show";
 }
 
-/*a.TwitterLink {
+a.TwitterLink {
     background: url('../img/twitter-hover.png') bottom;
     display: block;
     position: relative;
@@ -221,7 +218,7 @@ a.MailLink {
 a.MailLink:hover {
     background-position: 0 0;
     text-indent: -99999px;
-}*/
+}
 
 
 @media(max-width:767px) {
@@ -340,11 +337,9 @@ a.MailLink:hover {
     }
 }
 
-footer {
-    padding: 25px 0;
-    background-color: #f8f8f8;
-}
-
 p.copyright {
-    margin: 10px 0 0 0;
+    position: absolute;
+    bottom: 10px;
+    width: 96%;
+    text-align: center;
 }
