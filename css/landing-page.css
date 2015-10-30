@@ -29,8 +29,20 @@ a {
     font-family: "Inconsolata";
     color: #4A4A4A;
     font-weight: 700;
-    font-size: 13px;
-    text-decoration: none;
+    text-decoration: underline;
+}
+
+a:hover, a:visited:hover
+{
+    text-decoration: underline;
+    color: #5BA2F5;
+}
+
+a:visited
+{
+    text-decoration: underline;
+    color: #4A4A4A;
+    /*color: #CDCBCB;*/
 }
 
 body { 
@@ -96,6 +108,10 @@ body {
 .social-buttons  > ul {
 }
 
+ul.social-buttons > li {
+    padding: 0px 5px 0 0;
+}
+
 .project-list  > ul {
     padding-top: 20px;
     padding-bottom: 30px;
@@ -141,7 +157,6 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    /*color: rgba(255,255,255,1);*/
     color: rgba(73,73,73,1);
     -moz-transition: all .3s linear;
     -webkit-transition: all .3s linear;
@@ -169,55 +184,88 @@ body {
 }
 
 a.TwitterLink {
-    background: url('../img/twitter-hover.png') bottom;
+    background:transparent url('../img/twitter.png');
     display: block;
-    position: relative;
     width: 40px;
     height: 40px;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 a.TwitterLink:hover {
-    background-position: 0 0;
-    text-indent: -99999px;
+    background-image: url('../img/twitter-hover.png');
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
+
 a.GithubLink {
-    background: url('../img/github-hover.png') bottom;
+    background: url('../img/github.png');
     display: block;
-    position: relative;
     width: 40px;
     height: 40px;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 a.GithubLink:hover {
-    background-position: 0 0;
-    text-indent: -99999px;
+    background: url('../img/github-hover.png');
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 a.LinkedinLink {
-    background: url('../img/linkedin-hover.png') bottom;
+    background: url('../img/linkedin.png');
     display: block;
-    position: relative;
     width: 40px;
     height: 40px;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 a.LinkedinLink:hover {
-    background-position: 0 0;
-    text-indent: -99999px;
+   background: url('../img/linkedin-hover.png');
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 a.MailLink {
-    background: url('../img/mail-hover.png') bottom;
+    background: url('../img/mail.png');
     display: block;
-    position: relative;
     width: 40px;
     height: 40px;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 a.MailLink:hover {
-    background-position: 0 0;
-    text-indent: -99999px;
+     background: url('../img/mail-hover.png');
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 
