@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="developer creative javi aranega programming portfolio sonar projects music">
+    <meta name="description" content="I’m an 'off-road' developer. With my expertise I've been collaborating with big companies and known media. I've presented my projects at music tech festivals and events. I love to contribute to creative and entertainment industries and I enjoy creating unusual forms of interaction. But one of the things I love most is enhancing the user experience with the latest technologies.">
     <meta name="author" content="Javier Aránega">
 
     <title>Javier Aránega - Creative Developer</title>
@@ -23,8 +23,6 @@
     <!--link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.2.0/trianglify.min.js"></script>
-    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?2.5.0"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,13 +31,15 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]>
 
-      <!-- jQuery Version 1.11.0 -->
+    <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+
     <script type="text/javascript">
+
 
         $(function() {
 
@@ -48,41 +48,6 @@
             $(this).wrap('<figure class="tint t'+ n + '"></figure>');
           });
         });
-
-
-        $( document ).ready(function() 
-        {
-            //generateTriangles();
-
-            $(window).scroll(function()
-            {
-                //generateTriangles();
-            })
-        });
-
-        $( window ).resize(function() 
-        {
-            //generateTriangles();
-        });
-
-        function generateTriangles()
-        {
-
-            var ctx = document.getCSSCanvasContext("2d", "squares", window.innerWidth, window.innerHeight);
-
-            var pattern = Trianglify({
-                width: window.innerWidth,
-                height:document.documentElement.scrollHeight,
-                variance: 1,
-                cell_size: 50,
-                x_colors: ['#000000', '#C3C3C3', '#4A4A4A'], //Grey Tones
-                //x_colors: ['#45a1c0', '#D0D0D0', '#4A4A4A']
-            });
-
-            pattern.canvas(ctx.canvas);8
-        }
-
-
     </script>
    
 </head>
@@ -147,16 +112,16 @@
 
                         <ul class="list-inline social-buttons">
                             <li>
-                                <a href="https://twitter.com/javiaranega" src="img/twitter-hover.png" class="TwitterLink"></a>
+                                <a href="https://twitter.com/javiaranega" target="_blank" src="img/twitter-hover.png" class="TwitterLink"></a>
                             </li>
                             <li>
-                                <a href="https://github.com/jaranega" src="img/github-hover.png" class="GithubLink"></a>
+                                <a href="https://github.com/jaranega" target="_blank" src="img/github-hover.png" class="GithubLink"></a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/javiaranega" src="img/linkedin-hover.png" class="LinkedinLink"></a>
+                                <a href="https://www.linkedin.com/in/javiaranega" target="_blank" src="img/linkedin-hover.png" class="LinkedinLink"></a>
                             </li>
                             <li>
-                                <a href="mailto:javi.aranega@gmail.com" src="img/mail-hover.png" class="MailLink"></a>
+                                <a href="mailto:javi.aranega@gmail.com" target="_blank" src="img/mail-hover.png" class="MailLink"></a>
                             </li>
                         </ul>
                     </div>
@@ -174,7 +139,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                   <p class="text-muted small copyright"><i class="fa fa-copyright"></i> Javier Aránega 2015. All rights reserved.</p>
+                   <p class="text-muted small copyright"><i class="fa fa-copyright mirror"></i> Copyleft 2015. All rights reversed.</p>
                 </div>
             </div>
         </div>
